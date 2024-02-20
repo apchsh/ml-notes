@@ -36,6 +36,10 @@ Architecture:
   - SR15 argue that conditioning the decoder may work better for predictor since target distribution is not unimodal, but worse for optimisation since frame to frame only very small changes happen in video
   - SR15 make a composite model by running both tasks simultaneously 
 
+Data: 
+- UCF-101: 13,320 videos with length 6.2 seconds covering 101 different actionsfrom youtube covering object interation, (human) body motion, human-human interaction, playing musical instruments and sports.
+- HMDB-51: 5100 videos of 51 categories and length 3.2 seconds 
+
 Evaluation:
   - Look at reconstruction and predictions of the model w.r.t to video sequence
   - Quantitative eval on supervised action recognition dataset
